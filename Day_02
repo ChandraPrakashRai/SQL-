@@ -1,0 +1,18 @@
+CREATE DATABASE classroom;
+USE classroom;
+
+CREATE TABLE Learner(
+   id INT PRIMARY KEY,
+   roll_no INT,
+   name VARCHAR(50)
+);
+
+INSERT INTO Learner VALUES (101, 100, 'ABC');
+INSERT INTO Learner VALUES (102, 101, 'BCD');
+INSERT INTO Learner VALUES (103, 102, 'CDE');
+
+INSERT INTO Learner VALUES (104, 103, 'EFG');
+
+SELECT roll_no , name FROM Learner;
+SELECT * FROM Learner;
+
